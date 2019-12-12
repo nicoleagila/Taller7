@@ -7,7 +7,7 @@ package modelo;
 
 /**
  *
- * @author CltControl
+ * @author Luis Sanchez
  */
 public class Vehiculo {
     private String Color;

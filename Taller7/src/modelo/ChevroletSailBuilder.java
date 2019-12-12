@@ -7,7 +7,7 @@ package modelo;
 
 /**
  *
- * @author CltControl
+ * @author Luis Sanchez
  */
 public class ChevroletSailBuilder extends VehiculoBuilder{
     
@@ -15,39 +15,15 @@ public class ChevroletSailBuilder extends VehiculoBuilder{
 	vehiculo = new Vehiculo();
 	vehiculo.setMarca("Chevrolet");
 	vehiculo.setModelo("Sail");
+        vehiculo.setAlmacenamiento(1000);
+        vehiculo.setColor("Rojo");
     }
 	
     public void construirMotor(){
-        Motor m = new Motor("1.4");
-        vehiculo.setMotor(m);
+        vehiculo.setTipoMotor(new Motor("1.4"));
     }
     
     public void construirHabitaculo(){
-        
+        vehiculo.setTipoCarroceria(new Carroceria("1J23KO23"));
     }
-
-	/*@Override
-	public void ConstruirAlmacenamiento() {
-		v.setAlmacenamiento(1000);
-		
-	}
-
-	@Override
-	public void ConstruirCarroceria() {
-            v.TipoCarroceria = new Carroceria();
-            v.TipoCarroceria.setCarroceria(m);
-    
-    v.setMotor("1.4");
-		v.setAlmacenamiento("1000 lb");
-                v.setCarroceria("1J23KO23");
-		v.setCarroceria(m);
-}
-    
-    
-    
-    
-    
-    
-    */
-
 }
