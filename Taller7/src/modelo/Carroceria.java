@@ -23,5 +23,5 @@ public class Carroceria {
     public void setTipoCarroceria(String tipoCarroceria) {
         this.tipoCarroceria = tipoCarroceria;
     }
-       
+    
 }
