@@ -17,6 +17,7 @@ public class ChevroletAveoBuilder extends VehiculoBuilder{
         vehiculo.setMarca("Chevrolet");
         vehiculo.setModelo("Aveo");
         vehiculo.setColor("Azul");
+        vehiculo.setAlmacenamiento(716);
     }
 
     @Override
