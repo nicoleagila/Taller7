@@ -18,6 +18,11 @@ public class Vehiculo {
     private Carroceria TipoCarroceria;
     private Motor TipoMotor;
     
+    
+    public Vehiculo(){
+        
+    }
+    
     public Vehiculo(boolean CierreCentralizado, String Color, boolean DireccionAsistida, String Marca, String Modelo, Carroceria TipoCarroceria, Motor TipoMotor){
        this.CierreCentralizado = CierreCentralizado;
        this.Color = Color;
