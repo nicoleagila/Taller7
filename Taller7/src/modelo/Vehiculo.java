@@ -15,6 +15,7 @@ public class Vehiculo {
     private String Modelo;
     private Carroceria TipoCarroceria;
     private Motor TipoMotor;
+    private int almacenamiento;
     
     
     public Vehiculo(){
@@ -68,6 +69,15 @@ public class Vehiculo {
     public void setTipoMotor(Motor TipoMotor) {
         this.TipoMotor = TipoMotor;
     }
+
+    public void setAlmacenamiento(int almacenamiento) {
+        this.almacenamiento = almacenamiento;
+    }
+
+    public int getAlmacenamiento() {
+        return almacenamiento;
+    }
+    
 
     @Override
     public String toString() {
