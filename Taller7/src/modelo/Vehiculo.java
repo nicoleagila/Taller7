@@ -10,9 +10,7 @@ package modelo;
  * @author CltControl
  */
 public class Vehiculo {
-    private boolean CierreCentralizado;
     private String Color;
-    private boolean DireccionAsistida;
     private String Marca;
     private String Modelo;
     private Carroceria TipoCarroceria;
@@ -24,21 +22,11 @@ public class Vehiculo {
     }
     
     public Vehiculo(boolean CierreCentralizado, String Color, boolean DireccionAsistida, String Marca, String Modelo, Carroceria TipoCarroceria, Motor TipoMotor){
-       this.CierreCentralizado = CierreCentralizado;
        this.Color = Color;
-       this.DireccionAsistida = DireccionAsistida;
        this.Marca = Marca;
        this.Modelo = Modelo;
        this.TipoCarroceria= TipoCarroceria;
        this.TipoMotor = TipoMotor;
-    }
-
-    public boolean isCierreCentralizado() {
-        return CierreCentralizado;
-    }
-
-    public void setCierreCentralizado(boolean CierreCentralizado) {
-        this.CierreCentralizado = CierreCentralizado;
     }
 
     public String getColor() {
@@ -48,15 +36,7 @@ public class Vehiculo {
     public void setColor(String Color) {
         this.Color = Color;
     }
-
-    public boolean isDireccionAsistida() {
-        return DireccionAsistida;
-    }
-
-    public void setDireccionAsistida(boolean DireccionAsistida) {
-        this.DireccionAsistida = DireccionAsistida;
-    }
-
+    
     public String getMarca() {
         return Marca;
     }
@@ -91,10 +71,10 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo{" + "CierreCentralizado=" + CierreCentralizado + ", Color=" + Color + ", DireccionAsistida=" + DireccionAsistida + ", Marca=" + Marca + ", Modelo=" + Modelo + ", TipoCarroceria=" + TipoCarroceria + ", TipoMotor=" + TipoMotor + '}';
+        return "Vehiculo{" + "Color=" + Color + ", Marca=" + Marca + ", Modelo=" + Modelo + ", TipoCarroceria=" + TipoCarroceria + ", TipoMotor=" + TipoMotor + '}';
     }
 
-    
+
     
     
     
