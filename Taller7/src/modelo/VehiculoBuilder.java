@@ -17,7 +17,7 @@ public abstract class VehiculoBuilder {
     public abstract void construirHabitaculo();
     public abstract void construirMotor();
 
-    public String getVehiculo() {
+    public Vehiculo getVehiculo() {
         return vehiculo;
     }
     
