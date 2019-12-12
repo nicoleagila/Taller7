@@ -24,5 +24,9 @@ public class Motor {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
+
+    @Override
+    public String toString() {
+        return tipo;
+    }
 }
