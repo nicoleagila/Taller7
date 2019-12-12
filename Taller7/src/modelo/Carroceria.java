@@ -10,5 +10,18 @@ package modelo;
  * @author nicoleagila
  */
 public class Carroceria {
+    public String tipoCarroceria;
     
+    public Carroceria(String tipo){
+        this.tipoCarroceria=tipo;
+    }
+
+    public String getTipoCarroceria() {
+        return tipoCarroceria;
+    }
+
+    public void setTipoCarroceria(String tipoCarroceria) {
+        this.tipoCarroceria = tipoCarroceria;
+    }
+       
 }
